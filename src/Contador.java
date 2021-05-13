@@ -9,4 +9,7 @@ public class Contador {
         this.valorlimite = valorlimite;
         this.valorIncremento = valorIncremento;
     }
+    public Contador(int valorlimite) {
+        this.valorlimite = valorlimite;
+    }
 }
