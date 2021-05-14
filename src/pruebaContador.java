@@ -22,6 +22,13 @@ public class pruebaContador {
         assertEquals(expected, c.incrementar());  
     }
 
+    @Test
+    public void testContadorSuperarLimite() {
+        Contador c = new Contador(1,3,3);
+        int expected = 0;
+        assertEquals(expected, c.limite()); 
+        System.out.println("Se superó el límite"); 
+    }
     
 
 }
