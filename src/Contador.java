@@ -60,5 +60,10 @@ public class Contador {
         return this.valorInical;
     }
 
-    
+    public int resetear() {
+        while (getValorInical() < getValorlimite()) {
+            this.valorInical += getValorIncremento();
+        }
+        return this.valorInical = 0;
+    }
 }
