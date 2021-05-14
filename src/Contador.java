@@ -51,4 +51,12 @@ public class Contador {
         }
         return this.valorInical;
     }
+
+    public int valorActual() {
+        while (getValorInical() < getValorlimite()) {
+            this.valorInical += getValorIncremento();
+            System.out.println(this.valorInical);
+        }
+        return this.valorInical;
+    }
 }
