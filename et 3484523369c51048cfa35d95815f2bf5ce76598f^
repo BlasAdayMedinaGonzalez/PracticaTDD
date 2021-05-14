@@ -1,0 +1,35 @@
+[33mcommit 3484523369c51048cfa35d95815f2bf5ce76598f[m[33m ([m[1;36mHEAD -> [m[1;32mdoc[m[33m)[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 13:19:37 2021 +0100
+
+    Realizando la prueba testContadorIncrementar
+
+[33mcommit ee66de1bed33ec058ae4eb22b8c55769319e8c41[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 13:17:40 2021 +0100
+
+    Se ha arreglado el código testContadorPorDefecto y pasa la prueba
+
+[33mcommit 8c41272f0266f2f1181c47613b02c3a043cb2c5b[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 13:13:48 2021 +0100
+
+    Realizando la prueba testContadorPorDefecto
+
+[33mcommit dabcb8758a9c8244ecf7fe35e61e1a528d334a02[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 13:05:33 2021 +0100
+
+    Se ha arreglado el código testContadorExiste y pasa la prueba
+
+[33mcommit 6aaee73500ae56e07421b4ba05d243ae751fbdfa[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 13:00:56 2021 +0100
+
+    Realizando la prueba testContadorExiste
+
+[33mcommit 01f88aba71ac2c26e1eea0113fee4707dec6e639[m[33m ([m[1;31mprt1/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: BlasAdayMedinaGonzalez <usr2702@salesianos-lacuesta.net>
+Date:   Thu May 13 11:48:52 2021 +0100
+
+    Creando el repositoriode la práctica

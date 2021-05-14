@@ -2,9 +2,31 @@
 
 public class Contador {
     int valorInical = 0;
-    int valorlimite;
     int valorIncremento = 1;
-    public Contador(int valorInical, int valorlimite, int valorIncremento) {
+    int valorlimite;
+
+    //#region g y s
+    public int getValorInical() {
+        return valorInical;
+    }
+    public void setValorInical(int valorInical) {
+        this.valorInical = valorInical;
+    }
+    public int getValorlimite() {
+        return valorlimite;
+    }
+    public void setValorlimite(int valorlimite) {
+        this.valorlimite = valorlimite;
+    }
+    public int getValorIncremento() {
+        return valorIncremento;
+    }
+    public void setValorIncremento(int valorIncremento) {
+        this.valorIncremento = valorIncremento;
+    }
+    //#endregion g y s 
+    
+    public Contador(int valorInical, int valorIncremento, int valorlimite ) {
         this.valorInical = valorInical;
         this.valorlimite = valorlimite;
         this.valorIncremento = valorIncremento;
@@ -12,4 +34,11 @@ public class Contador {
     public Contador(int valorlimite) {
         this.valorlimite = valorlimite;
     }
+    public int incrementar() {
+        while (getValorInical() < getValorlimite()) {
+            this.valorInical += getValorIncremento();
+        }
+        return this.valorInical;
+    }
+    
 }

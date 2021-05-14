@@ -22,4 +22,6 @@ public class pruebaContador {
         assertEquals(expected, c.incrementar());  
     }
 
+    
+
 }
