@@ -59,4 +59,6 @@ public class Contador {
         }
         return this.valorInical;
     }
+
+    
 }
