@@ -40,7 +40,7 @@ public class Contador {
         }
         return this.valorInical;
     }
-    
+
     public int limite() {
         while (getValorInical() < getValorlimite()) {
             this.valorInical += getValorIncremento();

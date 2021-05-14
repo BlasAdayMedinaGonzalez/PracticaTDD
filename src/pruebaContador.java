@@ -29,6 +29,13 @@ public class pruebaContador {
         assertEquals(expected, c.limite()); 
         System.out.println("Se superó el límite"); 
     }
+
+    @Test
+    public void testContadorConocerValorActual() {
+        Contador c = new Contador(0,2,8);
+        int expected = 8;
+        assertEquals(expected, c.valorActual()); 
+    }
     
 
 }
