@@ -1,16 +1,17 @@
 
 
 public class Contador {
-    int valorInical = 0;
+    int valorInicial = 0;
     int valorIncremento = 1;
     int valorlimite;
+    int valorActual;
 
     //#region g y s
     public int getValorInical() {
-        return valorInical;
+        return valorInicial;
     }
     public void setValorInical(int valorInical) {
-        this.valorInical = valorInical;
+        this.valorInicial = valorInical;
     }
     public int getValorlimite() {
         return valorlimite;
@@ -27,7 +28,7 @@ public class Contador {
     //#endregion g y s 
     
     public Contador(int valorInical, int valorIncremento, int valorlimite ) {
-        this.valorInical = valorInical;
+        this.valorInicial = valorInical;
         this.valorlimite = valorlimite;
         this.valorIncremento = valorIncremento;
     }
@@ -35,35 +36,28 @@ public class Contador {
         this.valorlimite = valorlimite;
     }
     public int incrementar() {
-        while (getValorInical() < getValorlimite()) {
-            this.valorInical += getValorIncremento();
-        }
-        return this.valorInical;
+        this.valorActual = this.valorInicial;
+        if (getValorInical() < getValorlimite()) {
+            this.valorActual += getValorIncremento();
+        } 
+        return this.valorActual;
     }
 
     public int limite() {
-        while (getValorInical() < getValorlimite()) {
-            this.valorInical += getValorIncremento();
-            if (getValorInical() > getValorlimite()) {
-                this.valorInical = 0;
-                break;
-            }
-        }
-        return this.valorInical;
+        incrementar();
+        if (this.valorActual < this.valorlimite) {
+            this.valorActual += getValorIncremento();
+            return this.valorActual;
+        } else {
+            return this.valorInicial;
+        }   
     }
 
     public int valorActual() {
-        while (getValorInical() < getValorlimite()) {
-            this.valorInical += getValorIncremento();
-            System.out.println(this.valorInical);
-        }
-        return this.valorInical;
+        return this.valorActual;
     }
 
     public int resetear() {
-        while (getValorInical() < getValorlimite()) {
-            this.valorInical += getValorIncremento();
-        }
-        return this.valorInical = 0;
+        return this.valorActual = 0;
     }
 }
